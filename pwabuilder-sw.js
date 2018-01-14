@@ -6,7 +6,8 @@ var precacheFiles = [
 	 '/',
   '/index.html',
 	'/404.html',
-	'/offline.html'
+	'/offline.html',
+  '/js/webmidi.js'
       /* Add an array of files to precache for your app */
     ];
 
@@ -77,7 +78,7 @@ self.addEventListener('fetch', function(event) {
 
 
 //Install stage sets up the cache-array to configure pre-cache content
-/*
+
 self.addEventListener('install', function(evt) {
   console.log('The service worker is being installed.');
   evt.waitUntil(precache().then(function() {
@@ -87,7 +88,7 @@ self.addEventListener('install', function(evt) {
   })
   );
 });
-
+/*
 
 //allow sw to control of current page
 self.addEventListener('activate', function(event) {
