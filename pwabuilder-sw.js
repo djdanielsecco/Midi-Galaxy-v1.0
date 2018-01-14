@@ -88,7 +88,7 @@ self.addEventListener('install', function(evt) {
   })
   );
 });
-/*
+
 
 //allow sw to control of current page
 self.addEventListener('activate', function(event) {
@@ -146,4 +146,4 @@ function fromServer(request){
   //this is the fallback if it is not in the cahche to go to the server and get it
 return fetch(request).then(function(response){ return response})
 }
-*/
+
