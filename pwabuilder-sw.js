@@ -105,7 +105,7 @@ self.addEventListener('fetch', function(evt) {
 
 
 function precache() {
-  return caches.open(CACHE).then(function (cache) {
+  return caches.open(precacheFiles).then(function (cache) {
     return cache.addAll(precacheFiles);
   });
 }
@@ -113,7 +113,7 @@ function precache() {
 
 function fromCache(request) {
   //we pull files from the cache first thing so we can show them fast
-  return caches.open(CACHE).then(function (cache) {
+  return caches.open(precacheFiles).then(function (cache) {
     return cache.match(request).then(function (matching) {
       return matching || Promise.reject('no-match');
     });
@@ -135,7 +135,7 @@ self.addEventListener('fetch', function(event) {
 function update(request) {
   //this is where we call the server to get the newest version of the 
   //file to use the next time we show view
-  return caches.open(CACHE).then(function (cache) {
+  return caches.open(precacheFiles).then(function (cache) {
     return fetch(request).then(function (response) {
       return cache.put(request, response);
     });
