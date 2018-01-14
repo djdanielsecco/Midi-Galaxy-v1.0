@@ -1,0 +1,244 @@
+ @font-face {
+ 	font-family: 'OpenSans';
+ 	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+
+ }
+
+ @font-face {
+ 	font-family: 'OpenSans-Light';
+ 	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+
+ }
+
+ 	{
+ 	box-sizing: border-box;
+ }
+
+ html,
+ body, div {
+
+ 	margin: 0;
+ 	padding: 0;
+ 	background-color: rgb(49, 49, 49);
+	
+ }
+/*.fads1g{
+float: left;
+order: 2px solid #BBB;
+
+
+}*/
+label.btn.btn-default.active.toggle-off,
+label.btn.btn-secondary.toggle-on{
+padding-left: 10px !important;
+border-color: #BBB;
+	box-shadow: 1 1 1  #BBB;
+	font-family: "OpenSans";
+ 	color: whitesmoke;
+ 	font-size: 10px;
+background-color: rgb(49, 49, 49);
+
+	
+border: 1px solid #BBB;
+	
+
+}
+div.draggable, img.draggable
+{
+
+	
+	border: 2px solid #fff;
+    position: relative;
+   display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+z-index: auto;
+      *display: inline; 
+margin: 0px;
+    cursor: hand; 
+    cursor: pointer;       
+}
+
+ h4.tite {
+ 	font-family: "OpenSans";
+
+ 	color: whitesmoke;
+font-size: 12px;
+ 	margin-bottom: 7px;
+ 	margin: 4px;
+ 	align-content: center;
+ 	text-align: center;
+ }
+
+ #con {
+ 	width: inherit;
+ 	position: absolute;
+ 	margin-left: 0px;
+
+ }
+
+ #logo {
+border: rgb(49, 49, 49) !important;
+ 	position: relative;
+	z-index: 15;
+ 	top: 12px;
+ 	left: 0.7px;
+ }
+
+ div.bbb {
+ 	font-family: "OpenSans";
+ 	color: whitesmoke;
+ 	font-size: 9px;
+ 	border: 2px solid #BBB;
+ 	width: 150px;
+ 	height: 18px;
+
+ 	overflow: auto;
+ 	margin: 3.8em;
+ 	padding: 0px;
+ 	margin-bottom: -1px;
+ 	margin-top: -1px;
+ }
+
+ div.eee {
+ 	font-family: "OpenSans";
+ 	font-size: 9px;
+ 	color: whitesmoke;
+ 	border: 2px solid #BBB;
+ 	width: 150px;
+ 	height: 18px;
+
+ 	overflow: auto;
+ 	margin: 3.8em;
+ 	padding: 0px;
+ 	margin-bottom: -1px;
+ 	margin-top: -1px;
+
+ }
+
+ div.aaa {
+ 	border: 2px solid #BBB;
+ 	width: 222px;
+ 	min-height: 0px;
+	 height: 173px;
+ 	
+ 	
+ 	float: left;
+ 	margin: 1em;
+	 
+ 	padding: 0px;
+ }
+
+ div.ddd {
+margin-left: 0px
+ 	
+ }
+
+ .ccc {
+
+ 	width: auto;
+	 
+ 
+ 	overflow: inherit;
+ float: left;
+ 	margin: 0px;
+ 	padding: 0px;
+ 	
+ } 
+
+.mmm {
+
+ 	width: auto;
+	 
+ 
+ 	overflow: inherit;
+ float: left;
+ 	margin: 0px;
+ 	padding: 0px;
+ 	
+ }
+
+div.ggg {
+width: auto;
+ 	font-family: "OpenSans";
+	height: 36.5px;
+ 	
+ 	color: whitesmoke;
+	align-content: center;
+
+ 	border-bottom: 2px solid #BBB;
+ 	/*overflow: auto;*/
+ 	
+ 	
+ }
+#keysel  {
+	width: 176px;
+margin-top: 2px;
+margin-left : 15px;
+
+
+
+}
+
+#chansel  {
+	width: 80px;
+margin-top: 2px;
+margin-left : 6px;
+	margin-right : 6px;
+
+
+
+}
+#par1{
+	width: auto;
+	position: relative;
+	right: 1px;
+	font-size: 7.5px !important;
+	top: 14.8px;
+/*margin-top: 5px;*/
+}
+
+
+
+
+ div.fff {
+ 	font-family: "OpenSans";
+ 	font-size: 12px;
+ 	color: whitesmoke;
+ 	align-content: center;
+ 	text-align: left;
+ 	width: 495.5px;
+ 	min-height: 200px;
+ 	max-height: 300px;
+		overflow: auto;
+ 	border: 2px solid #BBB;
+ 	margin: 0px;
+ 	padding: 0px;
+ 	float: left;
+ 	margin-top: 0px;
+ }
+
+ div.mold {
+ 	
+ 	/*border: 2px solid #ccc;*/
+ 	position: absolute;
+	
+	 
+	 padding: 0px;
+	 margin: 0px;
+ 	overflow: visible;
+ 	top: 8em;
+
+
+ }
+
+ .cf:before,
+ .cf:after {
+ 	content: " ";
+ 	display: table;
+ }
+
+ .cf:after {
+ 	clear: both;
+ }

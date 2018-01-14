@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link type="text/css" href="bootsCss/bootstrap.min.css" rel="stylesheet">
+
+	<link type="text/css" href="bootsCss/jquery-ui.css" rel="stylesheet">
+
+<link type="text/css" href="bootsCss/bootstrap2-toggle.min.css" rel="stylesheet">
+
+	
+	<link rel="icon" href="img/LogoFavicon AudioMedia.png" type="image/x-icon"/>
+	<link type="text/css" href="css/estilo.css" rel="stylesheet">
+	<link type="text/css" href="css/fader.css" rel="stylesheet">
+	<link type="text/css" href="css/key.css" rel="stylesheet">
+	<link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   <link rel="apple-touch-icon" href="/images/MidiGalaxy-Beta/img/lofo144x.144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="/images/MidiGalaxy-Beta/img/LogoFavicon%20AudioMedia.png" sizes="200x200">
+  <meta name="apple-mobile-web-app-title" content="Audio">
+ 
+
+  <meta name="msapplication-TileColor" content="#fff">
+  <meta name="theme-color" content="#3f51b5">
+	<title>AudioMedia | Estudio | Midi Tool | ONLINE</title>
+
+</head>
+
+<body>
+
+	<div class="container">
+		<!--geral-->
+		<div id="con" class="container cf">
+			<!-- absolute
+			-->
+			<img id="logo" class="draggable" src="img/logo2 copy.png"  alt="" height="" width="91">
+
+
+			<div id="con1" class=" mold">
+				<!--    moldura-->
+
+
+
+				<div class=" ccc draggable">
+					<div class=" aaa ">
+						<h4 class="tite ">RAW:</h4>
+						<div id="con2" class="bbb ">RAW</div>
+						<h4 class="tite ">COMMAND:</h4>
+						<div id="con4" class="bbb">COMMAND</div>
+						<h4 class="tite ">CHANNEL:</h4>
+						<div id="con5" class="bbb">CHANNEL</div>
+						<h4 class="tite ">FREQUENCIA:</h4>
+						<div id="con3" class="bbb">FREQUENCIA</div>
+						<h4> <br></h4>
+
+					</div>
+
+					<div class=" aaa ddd">
+
+						<h4 class="tite ">INDEX TYPE:</h4>
+						<div id="con6" class="eee">INDEX TYPE</div>
+						<h4 class="tite ">DATA1/CC:</h4>
+						<div id="con7" class="eee">DATA1/CC</div>
+						<h4 class="tite ">DATA2/VEL:</h4>
+						<div id="con8" class="eee">DATA2/VEL</div>
+						<h4 class="tite ">NOTE/NUMBER:</h4>
+						<div id="con9" class="eee">NOTE AND NUNBER</div>
+						<h4> <br></h4>
+					</div>
+
+				</div>
+
+
+
+
+
+
+				<div class=" mmm draggable">
+
+					<div class=" aaa">
+						<h4 class="tite ">SysEx TYPE:</h4>
+						<div id="con10" class="bbb">SysEx TYPE</div>
+						<h4 class="tite ">SysEx HEX:</h4>
+						<div id="con11" class="bbb">SysEx HEX</div>
+						<h4 class="tite ">PORT NAME:</h4>
+						<div id="con12" class="bbb">PORT NAME</div>
+						<h4 class="tite ">TIMESTAMP:</h4>
+						<div id="con13" class="bbb">EVENT TIME</div>
+						<h4> <br></h4>
+					</div>
+					<div class=" aaa ddd">
+						<h4 class="tite ">KEYBORD MSG:</h4>
+						<div id="con14" class="eee">VIRTUAL KEY</div>
+						<h4 class="tite ">CONTROLLER CC:</h4>
+						<div id="con15" class="eee">CC</div>
+						<h4 class="tite ">CONTROLLER VAL:</h4>
+						<div id="con16" class="eee">DATA2</div>
+						<h4 class="tite ">CONTROLLER CH:</h4>
+						<div id="con17" class="eee">CH</div>
+						<h4> <br></h4>
+					</div>
+
+				</div>
+
+				<div class="fads1g draggable">
+
+					<div id="geral1" class="container"></div>
+				</div>
+				<!--<button style="width: 50px; " onclick="CreateControles(4)">create</button>-->
+				<!--<button style="width: 50px; " onclick="listFader()">list</button>-->
+
+				<div class=" pipi draggable  ">
+
+					<div class="container cf ggg">
+						<div style="float: left ">
+							<p id="par1">CONECT VIRTUAL KEYBORD TO PORT: </p>
+						</div>
+						<div style="float: left ">
+							<select id="keysel" class="form-control-sm"></select>
+						</div>
+						<div style="float: left "> <select id="chansel" class="form-control-sm"></select> </div>
+						<div class="funkyradio-info">
+
+							<input type="checkbox"  name="checkbox" id="checkbox6" data-toggle="toggle"  data-onstyle="secondary" data-on="MUTE" data-off="TONE" data-width="50" data-height="34px" checked/>
+
+
+							<!--<input type="checkbox" name="checkbox" id="checkbox6" switch/>
+            <label for="checkbox6">SoundOff</label>-->
+						</div>
+					</div>
+					<div id="piui" class="piano">
+						<div onmousedown="myFunction(0)" class="piano-key piano-key-natural piano-key-octave-0 piano-key-A piano-key-A0" id="piano_key_A0" data-note="A0"></div>
+						<div onmousedown="myFunction(1)" class="piano-key piano-key-accidental piano-key-octave-0 piano-key-A# piano-key-Bb piano-key-A#0 piano-key-Bb0" id="piano_key_A#0" data-note="A#0"></div>
+						<div onmousedown="myFunction(2)" class="piano-key piano-key-natural piano-key-octave-0 piano-key-B piano-key-Cb piano-key-B0 piano-key-Cb0" id="piano_key_B0" data-note="B0"></div>
+						<div onmousedown="myFunction(3)" class="piano-key piano-key-natural piano-key-octave-1 piano-key-C piano-key-B# piano-key-C1 piano-key-B#1" id="piano_key_C1" data-note="C1"></div>
+						<div onmousedown="myFunction(4)" class="piano-key piano-key-accidental piano-key-octave-1 piano-key-C# piano-key-Db piano-key-C#1 piano-key-Db1" id="piano_key_C#1" data-note="C#1"></div>
+						<div onmousedown="myFunction(5)" class="piano-key piano-key-natural piano-key-octave-1 piano-key-D piano-key-D1" id="piano_key_D1" data-note="D1"></div>
+						<div onmousedown="myFunction(6)" class="piano-key piano-key-accidental piano-key-octave-1 piano-key-D# piano-key-Eb piano-key-D#1 piano-key-Eb1" id="piano_key_D#1" data-note="D#1"></div>
+						<div onmousedown="myFunction(7)" class="piano-key piano-key-natural piano-key-octave-1 piano-key-E piano-key-Fb piano-key-E1 piano-key-Fb1" id="piano_key_E1" data-note="E1"></div>
+						<div onmousedown="myFunction(8)" class="piano-key piano-key-natural piano-key-octave-1 piano-key-F piano-key-Eb piano-key-F1 piano-key-Eb1" id="piano_key_F1" data-note="F1"></div>
+						<div onmousedown="myFunction(9)" class="piano-key piano-key-accidental piano-key-octave-1 piano-key-F# piano-key-Gb piano-key-F#1 piano-key-Gb1" id="piano_key_F#1" data-note="F#1"></div>
+						<div onmousedown="myFunction(10)" class="piano-key piano-key-natural piano-key-octave-1 piano-key-G piano-key-G1" id="piano_key_G1" data-note="G1"></div>
+						<div onmousedown="myFunction(11)" class="piano-key piano-key-accidental piano-key-octave-1 piano-key-G# piano-key-Ab piano-key-G#1 piano-key-Ab1" id="piano_key_G#1" data-note="G#1"></div>
+						<div onmousedown="myFunction(12)" class="piano-key piano-key-natural piano-key-octave-1 piano-key-A piano-key-A1" id="piano_key_A1" data-note="A1"></div>
+						<div onmousedown="myFunction(13)" class="piano-key piano-key-accidental piano-key-octave-1 piano-key-A# piano-key-Bb piano-key-A#1 piano-key-Bb1" id="piano_key_A#1" data-note="A#1"></div>
+						<div onmousedown="myFunction(14)" class="piano-key piano-key-natural piano-key-octave-1 piano-key-B piano-key-Cb piano-key-B1 piano-key-Cb1" id="piano_key_B1" data-note="B1"></div>
+						<div onmousedown="myFunction(15)" class="piano-key piano-key-natural piano-key-octave-2 piano-key-C piano-key-B# piano-key-C2 piano-key-B#2" id="piano_key_C2" data-note="C2"></div>
+						<div onmousedown="myFunction(16)" class="piano-key piano-key-accidental piano-key-octave-2 piano-key-C# piano-key-Db piano-key-C#2 piano-key-Db2" id="piano_key_C#2" data-note="C#2"></div>
+						<div onmousedown="myFunction(17)" class="piano-key piano-key-natural piano-key-octave-2 piano-key-D piano-key-D2" id="piano_key_D2" data-note="D2"></div>
+						<div onmousedown="myFunction(18)" class="piano-key piano-key-accidental piano-key-octave-2 piano-key-D# piano-key-Eb piano-key-D#2 piano-key-Eb2" id="piano_key_D#2" data-note="D#2"></div>
+						<div onmousedown="myFunction(19)" class="piano-key piano-key-natural piano-key-octave-2 piano-key-E piano-key-Fb piano-key-E2 piano-key-Fb2" id="piano_key_E2" data-note="E2"></div>
+						<div onmousedown="myFunction(20)" class="piano-key piano-key-natural piano-key-octave-2 piano-key-F piano-key-Eb piano-key-F2 piano-key-Eb2" id="piano_key_F2" data-note="F2"></div>
+						<div onmousedown="myFunction(21)" class="piano-key piano-key-accidental piano-key-octave-2 piano-key-F# piano-key-Gb piano-key-F#2 piano-key-Gb2" id="piano_key_F#2" data-note="F#2"></div>
+						<div onmousedown="myFunction(22)" class="piano-key piano-key-natural piano-key-octave-2 piano-key-G piano-key-G2" id="piano_key_G2" data-note="G2"></div>
+						<div onmousedown="myFunction(23)" class="piano-key piano-key-accidental piano-key-octave-2 piano-key-G# piano-key-Ab piano-key-G#2 piano-key-Ab2" id="piano_key_G#2" data-note="G#2"></div>
+						<div onmousedown="myFunction(24)" class="piano-key piano-key-natural piano-key-octave-2 piano-key-A piano-key-A2" id="piano_key_A2" data-note="A2"></div>
+						<div onmousedown="myFunction(25)" class="piano-key piano-key-accidental piano-key-octave-2 piano-key-A# piano-key-Bb piano-key-A#2 piano-key-Bb2" id="piano_key_A#2" data-note="A#2"></div>
+						<div onmousedown="myFunction(26)" class="piano-key piano-key-natural piano-key-octave-2 piano-key-B piano-key-Cb piano-key-B2 piano-key-Cb2" id="piano_key_B2" data-note="B2"></div>
+					<div onmousedown="myFunction(27)" class="piano-key piano-key-natural piano-key-octave-3 piano-key-C piano-key-B# piano-key-C3 piano-key-B#3" id="piano_key_C3" data-note="C3"></div>
+						<div onmousedown="myFunction(28)" class="piano-key piano-key-accidental piano-key-octave-3 piano-key-C# piano-key-Db piano-key-C#3 piano-key-Db3" id="piano_key_C#3" data-note="C#3"></div>
+						<div onmousedown="myFunction(29)" class="piano-key piano-key-natural piano-key-octave-3 piano-key-D piano-key-D3" id="piano_key_D3" data-note="D3"></div>
+						<div onmousedown="myFunction(30)" class="piano-key piano-key-accidental piano-key-octave-3 piano-key-D# piano-key-Eb piano-key-D#3 piano-key-Eb3" id="piano_key_D#3" data-note="D#3"></div>
+						<div onmousedown="myFunction(31)" class="piano-key piano-key-natural piano-key-octave-3 piano-key-E piano-key-Fb piano-key-E3 piano-key-Fb3" id="piano_key_E3" data-note="E3"></div>
+						<div onmousedown="myFunction(32)" class="piano-key piano-key-natural piano-key-octave-3 piano-key-F piano-key-Eb piano-key-F3 piano-key-Eb3" id="piano_key_F3" data-note="F3"></div>
+						<div onmousedown="myFunction(33)" class="piano-key piano-key-accidental piano-key-octave-3 piano-key-F# piano-key-Gb piano-key-F#3 piano-key-Gb3" id="piano_key_F#3" data-note="F#3"></div>
+						<div onmousedown="myFunction(34)" class="piano-key piano-key-natural piano-key-octave-3 piano-key-G piano-key-G3" id="piano_key_G3" data-note="G3"></div>
+						<div onmousedown="myFunction(35)" class="piano-key piano-key-accidental piano-key-octave-3 piano-key-G# piano-key-Ab piano-key-G#3 piano-key-Ab3" id="piano_key_G#3" data-note="G#3"></div>
+						<div onmousedown="myFunction(36)" class="piano-key piano-key-natural piano-key-octave-3 piano-key-A piano-key-A3" id="piano_key_A3" data-note="A3"></div>
+						<div onmousedown="myFunction(37)" class="piano-key piano-key-accidental piano-key-octave-3 piano-key-A# piano-key-Bb piano-key-A#3 piano-key-Bb3" id="piano_key_A#3" data-note="A#3"></div>
+						<div onmousedown="myFunction(38)" class="piano-key piano-key-natural piano-key-octave-3 piano-key-B piano-key-Cb piano-key-B3 piano-key-Cb3" id="piano_key_B3" data-note="B3"></div>
+						<div onmousedown="myFunction(39)" class="piano-key piano-key-natural piano-key-octave-4 piano-key-C piano-key-B# piano-key-C4 piano-key-B#4" id="piano_key_C4" data-note="C4"></div>
+						<div onmousedown="myFunction(40)" class="piano-key piano-key-accidental piano-key-octave-4 piano-key-C# piano-key-Db piano-key-C#4 piano-key-Db4" id="piano_key_C#4" data-note="C#4"></div>
+						<div onmousedown="myFunction(41)" class="piano-key piano-key-natural piano-key-octave-4 piano-key-D piano-key-D4" id="piano_key_D4" data-note="D4"></div>
+						<div onmousedown="myFunction(42)" class="piano-key piano-key-accidental piano-key-octave-4 piano-key-D# piano-key-Eb piano-key-D#4 piano-key-Eb4" id="piano_key_D#4" data-note="D#4"></div>
+						<div onmousedown="myFunction(43)" class="piano-key piano-key-natural piano-key-octave-4 piano-key-E piano-key-Fb piano-key-E4 piano-key-Fb4" id="piano_key_E4" data-note="E4"></div>
+						<div onmousedown="myFunction(44)" class="piano-key piano-key-natural piano-key-octave-4 piano-key-F piano-key-Eb piano-key-F4 piano-key-Eb4" id="piano_key_F4" data-note="F4"></div>
+						<div onmousedown="myFunction(45)" class="piano-key piano-key-accidental piano-key-octave-4 piano-key-F# piano-key-Gb piano-key-F#4 piano-key-Gb4" id="piano_key_F#4" data-note="F#4"></div>
+						<div onmousedown="myFunction(46)" class="piano-key piano-key-natural piano-key-octave-4 piano-key-G piano-key-G4" id="piano_key_G4" data-note="G4"></div>
+						<div onmousedown="myFunction(47)" class="piano-key piano-key-accidental piano-key-octave-4 piano-key-G# piano-key-Ab piano-key-G#4 piano-key-Ab4" id="piano_key_G#4" data-note="G#4"></div>
+						<div onmousedown="myFunction(48)" class="piano-key piano-key-natural piano-key-octave-4 piano-key-A piano-key-A4" id="piano_key_A4" data-note="A4"></div>
+						<div onmousedown="myFunction(49)" class="piano-key piano-key-accidental piano-key-octave-4 piano-key-A# piano-key-Bb piano-key-A#4 piano-key-Bb4" id="piano_key_A#4" data-note="A#4"></div>
+						<div onmousedown="myFunction(50)" class="piano-key piano-key-natural piano-key-octave-4 piano-key-B piano-key-Cb piano-key-B4 piano-key-Cb4" id="piano_key_B4" data-note="B4"></div>
+						<div onmousedown="myFunction(51)" class="piano-key piano-key-natural piano-key-octave-5 piano-key-C piano-key-B# piano-key-C5 piano-key-B#5" id="piano_key_C5" data-note="C5"></div>
+						<div onmousedown="myFunction(52)" class="piano-key piano-key-accidental piano-key-octave-5 piano-key-C# piano-key-Db piano-key-C#5 piano-key-Db5" id="piano_key_C#5" data-note="C#5"></div>
+						<div onmousedown="myFunction(53)" class="piano-key piano-key-natural piano-key-octave-5 piano-key-D piano-key-D5" id="piano_key_D5" data-note="D5"></div>
+						<div onmousedown="myFunction(54)" class="piano-key piano-key-accidental piano-key-octave-5 piano-key-D# piano-key-Eb piano-key-D#5 piano-key-Eb5" id="piano_key_D#5" data-note="D#5"></div>
+						<div onmousedown="myFunction(55)" class="piano-key piano-key-natural piano-key-octave-5 piano-key-E piano-key-Fb piano-key-E5 piano-key-Fb5" id="piano_key_E5" data-note="E5"></div>
+						<div onmousedown="myFunction(56)" class="piano-key piano-key-natural piano-key-octave-5 piano-key-F piano-key-Eb piano-key-F5 piano-key-Eb5" id="piano_key_F5" data-note="F5"></div>
+						<div onmousedown="myFunction(57)" class="piano-key piano-key-accidental piano-key-octave-5 piano-key-F# piano-key-Gb piano-key-F#5 piano-key-Gb5" id="piano_key_F#5" data-note="F#5"></div>
+						<div onmousedown="myFunction(58)" class="piano-key piano-key-natural piano-key-octave-5 piano-key-G piano-key-G5" id="piano_key_G5" data-note="G5"></div>
+						<div onmousedown="myFunction(59)" class="piano-key piano-key-accidental piano-key-octave-5 piano-key-G# piano-key-Ab piano-key-G#5 piano-key-Ab5" id="piano_key_G#5" data-note="G#5"></div>
+						<div onmousedown="myFunction(60)" class="piano-key piano-key-natural piano-key-octave-5 piano-key-A piano-key-A5" id="piano_key_A5" data-note="A5"></div>
+						<div onmousedown="myFunction(61)" class="piano-key piano-key-accidental piano-key-octave-5 piano-key-A# piano-key-Bb piano-key-A#5 piano-key-Bb5" id="piano_key_A#5" data-note="A#5"></div>
+						<div onmousedown="myFunction(62)" class="piano-key piano-key-natural piano-key-octave-5 piano-key-B piano-key-Cb piano-key-B5 piano-key-Cb5" id="piano_key_B5" data-note="B5"></div>
+						<div onmousedown="myFunction(63)" class="piano-key piano-key-natural piano-key-octave-6 piano-key-C piano-key-B# piano-key-C6 piano-key-B#6" id="piano_key_C6" data-note="C6"></div>
+						<div onmousedown="myFunction(64)" class="piano-key piano-key-accidental piano-key-octave-6 piano-key-C# piano-key-Db piano-key-C#6 piano-key-Db6" id="piano_key_C#6" data-note="C#6"></div>
+						<div onmousedown="myFunction(65)" class="piano-key piano-key-natural piano-key-octave-6 piano-key-D piano-key-D6" id="piano_key_D6" data-note="D6"></div>
+						<div onmousedown="myFunction(66)" class="piano-key piano-key-accidental piano-key-octave-6 piano-key-D# piano-key-Eb piano-key-D#6 piano-key-Eb6" id="piano_key_D#6" data-note="D#6"></div>
+						<div onmousedown="myFunction(67)" class="piano-key piano-key-natural piano-key-octave-6 piano-key-E piano-key-Fb piano-key-E6 piano-key-Fb6" id="piano_key_E6" data-note="E6"></div>
+						<div onmousedown="myFunction(68)" class="piano-key piano-key-natural piano-key-octave-6 piano-key-F piano-key-Eb piano-key-F6 piano-key-Eb6" id="piano_key_F6" data-note="F6"></div>
+						<div onmousedown="myFunction(69)" class="piano-key piano-key-accidental piano-key-octave-6 piano-key-F# piano-key-Gb piano-key-F#6 piano-key-Gb6" id="piano_key_F#6" data-note="F#6"></div>
+						<div onmousedown="myFunction(70)" class="piano-key piano-key-natural piano-key-octave-6 piano-key-G piano-key-G6" id="piano_key_G6" data-note="G6"></div>
+						<div onmousedown="myFunction(71)" class="piano-key piano-key-accidental piano-key-octave-6 piano-key-G# piano-key-Ab piano-key-G#6 piano-key-Ab6" id="piano_key_G#6" data-note="G#6"></div>
+						<div onmousedown="myFunction(72)" class="piano-key piano-key-natural piano-key-octave-6 piano-key-A piano-key-A6" id="piano_key_A6" data-note="A6"></div>
+						<div onmousedown="myFunction(73)" class="piano-key piano-key-accidental piano-key-octave-6 piano-key-A# piano-key-Bb piano-key-A#6 piano-key-Bb6" id="piano_key_A#6" data-note="A#6"></div>
+						<div onmousedown="myFunction(74)" class="piano-key piano-key-natural piano-key-octave-6 piano-key-B piano-key-Cb piano-key-B6 piano-key-Cb6" id="piano_key_B6" data-note="B6"></div>
+						<div onmousedown="myFunction(75)" class="piano-key piano-key-natural piano-key-octave-7 piano-key-C piano-key-B# piano-key-C7 piano-key-B#7" id="piano_key_C7" data-note="C7"></div>
+						<div onmousedown="myFunction(76)" class="piano-key piano-key-accidental piano-key-octave-7 piano-key-C# piano-key-Db piano-key-C#7 piano-key-Db7" id="piano_key_C#7" data-note="C#7"></div>
+						<div onmousedown="myFunction(77)" class="piano-key piano-key-natural piano-key-octave-7 piano-key-D piano-key-D7" id="piano_key_D7" data-note="D7"></div>
+						<div onmousedown="myFunction(78)" class="piano-key piano-key-accidental piano-key-octave-7 piano-key-D# piano-key-Eb piano-key-D#7 piano-key-Eb7" id="piano_key_D#7" data-note="D#7"></div>
+						<div onmousedown="myFunction(79)" class="piano-key piano-key-natural piano-key-octave-7 piano-key-E piano-key-Fb piano-key-E7 piano-key-Fb7" id="piano_key_E7" data-note="E7"></div>
+						<div onmousedown="myFunction(80)" class="piano-key piano-key-natural piano-key-octave-7 piano-key-F piano-key-Eb piano-key-F7 piano-key-Eb7" id="piano_key_F7" data-note="F7"></div>
+						<div onmousedown="myFunction(81)" class="piano-key piano-key-accidental piano-key-octave-7 piano-key-F# piano-key-Gb piano-key-F#7 piano-key-Gb7" id="piano_key_F#7" data-note="F#7"></div>
+						<div onmousedown="myFunction(82)" class="piano-key piano-key-natural piano-key-octave-7 piano-key-G piano-key-G7" id="piano_key_G7" data-note="G7"></div>
+						<div onmousedown="myFunction(83)" class="piano-key piano-key-accidental piano-key-octave-7 piano-key-G# piano-key-Ab piano-key-G#7 piano-key-Ab7" id="piano_key_G#7" data-note="G#7"></div>
+						<div onmousedown="myFunction(84)" class="piano-key piano-key-natural piano-key-octave-7 piano-key-A piano-key-A7" id="piano_key_A7" data-note="A7"></div>
+						<div onmousedown="myFunction(85)" class="piano-key piano-key-accidental piano-key-octave-7 piano-key-A# piano-key-Bb piano-key-A#7 piano-key-Bb7" id="piano_key_A#7" data-note="A#7"></div>
+						<div onmousedown="myFunction(86)" class="piano-key piano-key-natural piano-key-octave-7 piano-key-B piano-key-Cb piano-key-B7 piano-key-Cb7" id="piano_key_B7" data-note="B7"></div>
+						<div onmousedown="myFunction(87)" class="piano-key piano-key-natural piano-key-octave-8 piano-key-C piano-key-C8" id="piano_key_C8" data-note="C8"></div>
+
+
+
+					</div>
+
+
+
+
+
+
+				</div>
+				<!--fim do imput-->
+				<div id="inputs" class="container cf draggable fff">INPUTS</div>
+				<div id="outputs" class="container cf draggable  fff">OUTPUTS</div>
+
+
+
+
+			</div>
+			<!--fim da moldura-->
+
+		</div>
+		<!--topo e imagem absolue-->
+
+	</div>
+	<!--container geral fim-->
+
+
+	<script src="js/webmidi.js"></script>
+	
+
+	<script type="text/javascript" src="lib/WebMIDIAPI.min.js"></script>
+	
+	<script>
+		var MidiInKey1 = 0;
+		var rep1;
+		var outlist;
+		WebMidi.enable();
+		var portOut = WebMidi.outputs;
+		var seloutportvirtual = 0;
+		var seloutportvirtual1 = 1;
+
+	</script>
+	<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="lib/jquery-ui.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<!-- <script type="text/javascript" src="js/umd/popper.min.js"></script> -->
+	<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap2-toggle.min.js"></script>
+	<script src="js/script1.js"></script>
+	<script src="js/script2.js"></script>
+	<script src="js/scripttest1.js"></script>
+	<!--<script src="js/drop1.js"></script>-->
+	
+	<script>
+		$(function(e) {
+			/*alert('oi'); */
+			$('.draggable').draggable({
+				snap: true
+			});
+			
+				$('#checkbox6').change(function() {
+				checkaudio = $(this).prop('checked');
+			console.log(checkaudio);
+			});
+			
+			
+		});
+/*$(function(e){
+   
+   $('.poplo').each(function(i){
+       $(this).attr({"data-toggle" : "toggle",
+					 "" : "toggle",  "data-onstyle" : "secondary"
+				   
+				   
+				   
+				   
+				   
+					});
+      
+   });
+   
+});*/
+	</script>
+	
+	<script>
+	if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('pwabuilder-sw.js', {scope: '.'}, '/404.html', '/offline.html')
+  .then(function(reg) {
+    // registration worked
+    console.log('Registration succeeded. Scope is ' + reg.scope);
+  }).catch(function(error) {
+    // registration failed
+    console.log('Registration failed with ' + error);
+  });
+}
+		
+
+	
+	</script>
+</body>
+
+</html>

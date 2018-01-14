@@ -1,0 +1,130 @@
+div.pipi {
+	
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	width: auto;
+	justify-content: center;
+	position: relative;
+	display: inline-block;
+	top: 0px;
+	padding: 0px;
+
+	border: 2px solid #BBB;
+}
+
+.piano {
+	
+}
+
+.piano-key {
+	float: left;
+	border-radius: 0 0 4px 4px;
+	display: block;
+}
+
+.piano-key-natural {
+	background: #f5f5f5 -webkit-linear-gradient(top, transparent, #fff, transparent);
+	background: #f5f5f5 linear-gradient(to bottom, transparent, #fff, transparent);
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.15);
+	border-right-width: 0;
+	border-bottom-width: 1px;
+	height: 111px;
+	width: 20px;
+	margin-left: -1px;
+}
+
+.piano-key-natural:last-child {
+	border-right-width: 1px;
+}
+
+.piano-key-natural.piano-key-pressed,
+.piano-key-natural:active {
+	background: #d9d9d9 -webkit-linear-gradient(top, #f1f1f1, transparent, #f1f1f1);
+	background: #d9d9d9 linear-gradient(to bottom, #f1f1f1, transparent, #f1f1f1);
+	border-bottom-width: 1px;
+	border-left-color: rgba(0, 0, 0, 0.15);
+	box-shadow: inset -2px 0 0 0 rgba(0, 0, 0, 0.15), inset 1px 0 0 0 rgba(0, 0, 0, 0.15);
+}
+
+.piano-key-accidental {
+	background: #111 -webkit-linear-gradient(top, transparent, rgba(255, 255, 255, 0.075), transparent);
+	background: #111 linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.075), transparent);
+	box-shadow: inset 0 0 0 1px #000, inset 0 -4px 0 1px #000, inset 0 -5px 0 1px rgba(255, 255, 255, 0.2);
+	height: 57px;
+	width: 11px;
+	position: relative;
+	left: -10px;
+	margin-right: -20px;
+}
+
+.piano-key-accidental.piano-key-pressed,
+.piano-key-accidental:active {
+	background: #000 -webkit-linear-gradient(top, transparent, rgba(255, 255, 255, 0.2));
+	background: #000 linear-gradient(to bottom, transparent, #fff);
+	box-shadow: inset 0 0 0 1px #000, inset 0 -2px 0 1px #000, inset 0 -3px 0 1px rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 1200px) {
+	#piano_key_B5,
+	#piano_key_A5,
+	.piano-key-octave-0,
+	/*.piano-key-octave-4,*/
+	.piano-key-octave-1,
+	.piano-key-octave-6,
+	.piano-key-octave-7,
+	.piano-key-octave-8 {
+		display: none;
+	}
+	
+	.piano-key-natural {
+	
+	width: 19.9px;
+	}
+	
+	.piano-key-accidental{
+	width: 10.9px;
+	}
+}
+
+/*@media (max-width: 760px) {
+	
+	.piano-key-octave-2,
+.piano-key-octave-5 {
+		display: none;
+	}*/
+
+
+
+/*@media (max-width: 90px) {
+  .piano-key-octave-7 {
+    display: none;
+  }
+}*/
+/*
+@media (max-width: 110px) {
+  .piano-key-octave-2 {
+    display: none;
+  }
+}
+@media (max-width: 527px) {
+  .piano-key-octave-6 {
+    display: none;
+  }
+}
+@media (max-width: 319px) {
+  .piano-key-octave-3 {
+    display: none;
+  }
+}
+@media (max-width: 115px) {
+  .piano-key-octave-5 {
+    display: none;
+  }
+*/

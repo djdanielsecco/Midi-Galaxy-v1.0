@@ -1,0 +1,153 @@
+.faders1 {
+
+
+float: left;
+padding: 0px;
+
+}
+
+.fads1g{
+width: 992px;
+ 	border: 2px solid #BBB;
+ 	
+ 	float: left;
+ 	margin: 0px;
+	position: relative;
+ 	padding: 0px;
+	
+ 
+
+}
+/*#geral1{
+
+border: 2px solid #BBB;
+}*/
+
+.clasize{
+width: 111.7px;
+	
+	/*display: inline-block;*/
+	height: 325.6px;
+	border: 2px solid #BBB;
+
+	
+padding: 5px;
+ 	float: left;
+ margin-right: 0.5em ;
+	margin-top: 1em;
+	margin-bottom: 1em;
+ 	
+
+}
+
+.devi-7.clasize{
+	margin-right: 0px;}
+.devi-4.clasize{
+margin-left: 8px;
+}
+
+select.form-control-sm{
+	font-family: "OpenSans";
+ 	font-size: 9px;
+ 	color: whitesmoke;
+	background-color: rgb(49, 49, 49);
+    font-size: 10px;
+    width: 95px;
+	height: 31px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*.bfads{
+width: 65px;
+	height: 240px;
+	border: 2px solid #BBB;
+	padding: 13px;
+ 
+ 	margin-left: 25px;
+ 	
+
+
+}*/
+
+
+
+
+
+input[type=range] {
+	display: inline-block;
+  -webkit-appearance: none;
+ 
+  
+	 width: 195px;
+  height: 20px;
+ 	position: relative;
+ top: 103px;
+	right: 49.6px;
+	transform: rotate(-90deg);
+	
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 60%;
+  height: 17.2px;
+  cursor: pointer;
+  box-shadow: 2.7px 2.7px 2.8px #000000, 0px 0px 2.7px #0d0d0d;
+  background: #313131;
+  border-radius: 6.2px;
+  border: 1.3px solid #ffffff;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #050000, 0px 0px 1px #1f0000;
+  border: 2.2px solid #000000;
+  height: 39px;
+  width: 19px;
+  border-radius: 2px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -12.2px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #505050;
+}
+@media (max-width: 1200px) {
+ .fads1g,   div.mold{
+    width: 496.3px;
+	 padding: 0px;
+  }
+	.clasize{
+		width: 103.1px;
+		height: 322px;
+	margin-right: 12.4px;
+		padding: 0px;
+		
+	margin-bottom: 1em;
+	}
+	#par1{
+	
+	right: 1px;
+	font-size: 6.5px !important;
+	top: 14.8px;
+/*margin-top: 5px;*/
+}
+	
+	.devi-1.clasize, .devi-5.clasize {
+		margin-right: 22.4px!important; 
+	}
+	.devi-3.clasize, .devi-7.clasize {
+	margin-right: 0px!important; 
+	
+	} 
+	
+	.devi-4.clasize, .devi-5.clasize, .devi-6.clasize, .devi-7.clasize {
+	 
+	margin-top: 0em;
+	} 
+	.devi-4.clasize{
+margin-left: 0px;
+}
+	
+}

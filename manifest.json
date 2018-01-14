@@ -1,0 +1,28 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "AudioMedia | Estudio | Midi Tool | ONLINE",
+    "scope": ".",
+    "display": "standalone",
+   "start_url": "/index.html",
+    "short_name": "Audio",
+    "theme_color": "transparent",
+    "description": "",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+	 "icons": [
+        {
+            "src": "/images/MidiGalaxy-Beta/img/LogoFavicon%20AudioMedia.png",
+            "type": "image/png",
+            "sizes": "200x200"
+        },
+          {
+            "src": "/images/MidiGalaxy-Beta/img/lofo144x.144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        }
+    ]
+   
+}
