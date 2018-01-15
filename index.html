@@ -208,6 +208,7 @@
 		var portOut = WebMidi.outputs;
 		var seloutportvirtual = 0;
 		var seloutportvirtual1 = 1;
+
 	</script>
 	<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="lib/jquery-ui.min.js"></script>
@@ -229,19 +230,21 @@
 				console.log(checkaudio);
 			});
 		});
+
 	</script>
 	<script>
 		if (navigator.serviceWorker.controller) {
-  console.log('[PWA Builder] active service worker found, no need to register')
-} else {
+			console.log('[PWA Builder] active service worker found, no need to register')
+		} else {
 
-//Register the ServiceWorker
-  navigator.serviceWorker.register('pwabuilder-sw.js', {
-    scope: './'
-  }).then(function(reg) {
-    console.log('Service worker has been registered for scope:'+ reg.scope);
-  });
-}
+			//Register the ServiceWorker
+			navigator.serviceWorker.register('pwabuilder-sw.js', {
+				scope: './'
+			}).then(function(reg) {
+				console.log('Service worker has been registered for scope:' + reg.scope);
+			});
+		}
+
 	</script>
 </body>
 
