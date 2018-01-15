@@ -4,7 +4,7 @@
     "name": "AudioMedia | Estudio | Midi Tool | ONLINE",
     "scope": ".",
     "display": "standalone",
-   "start_url": "/offline.html",
+   "start_url": "../offline.html",
     "short_name": "Audio",
     "theme_color": "transparent",
     "description": "",
