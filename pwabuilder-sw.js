@@ -11,6 +11,7 @@ var precacheFiles = [
       /* Add an array of files to precache for your app */
     ];
 
+/*
 
 self.addEventListener('fetch', function (event) {
 	event.respondWith(
@@ -37,6 +38,7 @@ self.addEventListener('fetch', function (event) {
 		})
 	);
 });
+*/
 
 self.addEventListener('fetch', function (event) {
 	event.respondWith(
