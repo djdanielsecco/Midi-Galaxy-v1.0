@@ -10,7 +10,7 @@ var precacheFiles = [
   '/js/webmidi.js'
       /* Add an array of files to precache for your app */
     ];
-
+var precache = precacheFiles;
 
 self.addEventListener('install', function (evt) {
 	console.log('The service worker is being installed.');
