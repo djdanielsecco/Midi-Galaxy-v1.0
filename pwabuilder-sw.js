@@ -2,16 +2,18 @@
 var CACHE_STATIC_NAME = 'static-v40';
 var CACHE_DYNAMIC_NAME = 'dynamic-v3';
 var CACHE = 'pwabuilder-precache';
+
+/*
 var precacheFiles = [
 	 '/',
   '/index.html',
 	
 	'/offline.html'
 
-      /* Add an array of files to precache for your app */
+ 
     ];
 
-/*
+
 
 self.addEventListener('fetch', function (event) {
 	event.respondWith(
